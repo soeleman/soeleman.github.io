@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Soeleman | Another Dev</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, , shrink-to-fit=no">
+		<meta name="description" content="Author: Soeleman, Category: Developer, .NET, C#, JavaScript, WebAssembly">
+		<meta name="msapplication-TileColor" content="#2d89ef">
+		<meta name="msapplication-starturl" content="/">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="dns-prefetch" href="https://github.io">
+		<link rel="dns-prefetch" href="https://googleapis.com">
+		<link rel="preconnect" href="https://github.io">
+		<link rel="preconnect" href="https://googleapis.com">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff4945">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="icon" href="/favicon.ico" type="image/png" />
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				background: #000;
+			}
+
+			.logo {
+				position: relative;
+				color: #fff;
+				font-size: 6.75em;
+				animation: animate 5s linear infinite;
+				text-shadow: 0 0 50px #0f0,
+					0 0 100px #0f0,
+					0 0 150px #0f0,
+					0 0 200px #0f0,
+					0 0 250px #0f0;
+			}
+
+			@keyframes animate {
+				0% {
+					filter: hue-rotate(0deg)
+				}
+
+				100% {
+					filter: hue-rotate(360deg);
+				}
+			}
+
+			@font-face {
+				font-family: 'github';
+				src: url('assets/fonts/github.eot?v6bjt4');
+				src: url('assets/fonts/github.eot?v6bjt4#iefix') format('embedded-opentype'),
+					url('assets/fonts/github.ttf?v6bjt4') format('truetype'),
+					url('assets/fonts/github.woff?v6bjt4') format('woff'),
+					url('assets/fonts/github.svg?v6bjt4#github') format('svg');
+				font-weight: normal;
+				font-style: normal;
+				font-display: block;
+			}
+
+			i {
+				font-family: 'github' !important;
+				speak: never;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			.icon-github::before {
+				content: "\e900";
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<i class="icon-github logo" aria-hidden="true"></i>
+		</div>
+		<script>
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', () => {
+					navigator.serviceWorker
+						.register('/sw.js')
+						.then(registration => {
+							console.log(`Service Worker registered! Scope: ${registration.scope}`);
+						})
+						.catch(err => {
+							console.log(`Service Worker registration failed: ${err}`);
+						});
+				});
+			}
+			window.addEventListener("DOMContentLoaded", function () {
+				history.pushState(null, null, "/");
+			}, true);
+		</script>
+		<noscript>Please enable JavaScript in your browser.</noscript>
+	</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class=" js">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, , shrink-to-fit=no">
+		<meta name="description" content="Author: Soeleman, Category: Developer, .NET, C#, JavaScript, WebAssembly">
+		<meta name="msapplication-TileColor" content="#2d89ef">
+		<meta name="msapplication-starturl" content="/">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="canonical" href="https://soeleman.github.io/">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff4945">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="icon" href="/favicon.ico" type="image/png" />
+		<link rel="preload" href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300&display=swap" media="all" as="style" onload="this.rel='stylesheet'" crossorigin>
+		<link rel="preload" href="/css/bundle.css" media="all" as="style" onload="this.rel='stylesheet'">
+		<title>Soeleman | Another Dev</title>
+	</head>
+
+	<body>
+		<main>
+			<div class="intro">Hello, I'm Soeleman!</div>
+			<div class="tagline">What Ever</div>
+			<div class="icons-social">
+				<a target="_blank" aria-label="soeleman @ github" href="https://github.com/soeleman" rel="noreferrer"><i class="fab fa-github"></i></a>
+			</div>
+		</main>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" crossorigin></script>
+		<script>
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', () => {
+					navigator.serviceWorker
+						.register('/sw.js')
+						.then(registration => {
+							console.log(`Service Worker registered! Scope: ${registration.scope}`);
+						})
+						.catch(err => {
+							console.log(`Service Worker registration failed: ${err}`);
+						});
+				});
+			}
+		</script>
+	</body>
+
+</html>
